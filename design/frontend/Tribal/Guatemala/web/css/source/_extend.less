@@ -1,0 +1,44 @@
+@link: #ef5a35;
+@botones-primary: #ef5a35;
+@botones-second: #e05206;
+
+// @fuentes-font-family: 'Roboto', sans-serif;
+// @fuentes-font-family-thin: 'Roboto Thin', sans-serif;
+// @fuentes-font-family-light: 'Roboto Light', sans-serif;
+// @fuentes-font-family-medium: 'Roboto Medium', sans-serif;
+// @fuentes-font-family-black: 'Roboto Black', sans-serif;
+
+// @font-family__serif:@fuentes-font-family;
+// @font-family__sans-serif:@fuentes-font-family-thin;
+// @font-family__monospace:@fuentes-font-family-light;
+// @font-path:@fuentes-font-family-light;
+
+
+
+@button-primary__background: @botones-primary;
+@button-secondary__background:@botones-second;
+
+
+// @link__color:@link;
+// @link__text-decoration:none	;
+// @link__visited__color:	@link;
+// @link__visited__text-decoration:none;	
+// @link__hover__color :@link;
+// @link__hover__text-decoration:underline;
+// @link__active__color :@link;
+// @link__active__text-decoration:underline;
+
+@_link-color: @link;
+@_link-color-hover: @link;
+@_line-height: @link;
+@_disabled_opacity: @button__disabled__opacity;
+
+
+
+@import "library/variables/_fuentes_extend.less";
+@import "components/_compu.less";
+& when (@media-common = true) {
+    * {
+        font-family: "Roboto", sans-serif;
+    }
+}
